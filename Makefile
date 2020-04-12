@@ -50,8 +50,11 @@ define Build/Compile
 endef
 
 define Package/luci-app-vssr/conffiles
-/etc/ssr_ip
+/etc/china_ssr.txt
 /etc/dnsmasq.ssr/gfw_list.conf
+/etc/dnsmasq.ssr/gfw_base.conf
+/etc/dnsmasq.oversea/oversea_list.conf
+/etc/ssr_ip
 endef
 
 define Package/luci-app-vssr/install
